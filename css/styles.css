@@ -423,3 +423,141 @@
         border-bottom-color: #33C3F0;
     } */
 }
+
+/* =============================================
+   Dark mode — auto based on system preference
+   ============================================= */
+@media (prefers-color-scheme: dark) {
+
+    /* Page base */
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    /* Links */
+    a {
+        color: #60c8e8;
+    }
+
+    /* Skeleton default buttons */
+    .button,
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+        color: #ccc;
+        border-color: #555;
+        background-color: transparent;
+    }
+
+    .button:hover,
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    .button:focus,
+    button:focus {
+        color: #fff;
+        border-color: #999;
+    }
+
+    /* Primary button — keep the blue, just slightly muted */
+    .button.button-primary,
+    button.button-primary,
+    input[type="submit"].button-primary {
+        background-color: #1a8fb5;
+        border-color: #1a8fb5;
+        color: #fff;
+    }
+
+    .button.button-primary:hover,
+    button.button-primary:hover,
+    input[type="submit"].button-primary:hover {
+        background-color: #1478a0;
+        border-color: #1478a0;
+    }
+
+    /* Form inputs */
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea,
+    select {
+        background-color: #1e1e1e;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #60c8e8;
+    }
+
+    /* Code blocks */
+    code {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+
+    /* Tables & dividers */
+    th, td {
+        border-bottom-color: #333;
+    }
+
+    hr {
+        border-top-color: #333;
+    }
+
+    /* Section dividers */
+    .docs-section {
+        border-top-color: #333;
+    }
+
+    /* Navbar */
+    .navbar,
+    .navbar-spacer {
+        background: #1a1a1a;
+        border-top-color: #333;
+        border-bottom-color: #333;
+    }
+
+    .navbar-link {
+        color: #e0e0e0;
+    }
+
+    /* Popover */
+    .popover {
+        background: #1e1e1e;
+        border-color: #444;
+    }
+
+    .popover-link {
+        color: #e0e0e0;
+        border-bottom-color: #333;
+    }
+
+    /* CV button inside the pink banner */
+    .cv-btn:link,
+    .cv-btn:visited {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    /* GitHub icon — invert so the black logo is visible on dark */
+    img[alt="Github"] {
+        filter: invert(1);
+    }
+}
