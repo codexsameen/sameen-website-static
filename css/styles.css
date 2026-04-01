@@ -2,15 +2,12 @@
 .cv-btn:link, .cv-btn:visited {
     background-color: white;
     color: black;
-    padding: 6px 8px;
+    padding: 6px 12px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
-    float: right;
-    line-height: 20px;
-    position: relative;
-    margin-top: -20px;
-    margin-right: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 3px;
 }
 
 /* .cv-btn:hover, .cv-btn:active {
@@ -18,42 +15,11 @@
     color: white;
 } */
 
-/* View CV button: iPad */
-@media (min-width: 1024px) {
-    .cv-btn:link {
-        /* float: right; */
-        position: relative;
-        margin-top: -45px;
-        margin-right: 40px;
-    }
-
-    .alert {
-        height: 30px;
-    }
-}
-
-/* View CV button: iPhone 6s, X, etc */
+/* View CV button: mobile */
 @media only screen and (max-width: 600px) {
-    .cv-btn:link {
-        float: left;
-        margin-top: 10px;
-        margin-left: 0px;
-    }
-
     .alert {
-        height: 60px;
-    }
-}
-
-/* View CV button: iPhone 5 */
-@media only screen and (max-device-width: 560px) {
-    .cv-btn:link {
-        position: relative;
-        top: -20px;
-    }
-
-    .alert {
-        height: 80px;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 }
 
@@ -103,6 +69,21 @@
         font-size: 0.9em;
         text-align: center;
     }
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    background-color: #f03365;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.alert p {
+    flex: 1;
+    margin: 0;
+    color: white;
 }
 
 .closebtn {
