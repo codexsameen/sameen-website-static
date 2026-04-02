@@ -10,6 +10,10 @@
     border-radius: 3px;
 }
 
+.blog-banner {
+    background-color: #2d2d2d;
+}
+
 /* .cv-btn:hover, .cv-btn:active {
     background-color:#f03365;
     color: white;
@@ -428,6 +432,10 @@
    Dark mode — auto based on system preference
    ============================================= */
 @media (prefers-color-scheme: dark) {
+
+    .blog-banner {
+        background-color: #3a3a3a;
+    }
 
     /* Page base */
     body {
