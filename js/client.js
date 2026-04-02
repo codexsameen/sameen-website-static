@@ -46,3 +46,8 @@ function closeHireAlert() {
     hireAlertCloseBtn.parentElement.style.display = 'none';
 
 }
+
+function closeMeetingBanner() {
+    document.getElementById("meetingBanner").style.display = "none";
+}
+
