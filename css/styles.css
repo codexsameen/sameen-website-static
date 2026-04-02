@@ -10,7 +10,7 @@
     border-radius: 3px;
 }
 
-.blog-banner {
+.alert.blog-banner {
     background-color: #2d2d2d;
 }
 
@@ -433,7 +433,7 @@
    ============================================= */
 @media (prefers-color-scheme: dark) {
 
-    .blog-banner {
+    .alert.blog-banner {
         background-color: #3a5a8c;
     }
 
