@@ -23,6 +23,11 @@
     color: #1a1a1a;
 }
 
+.alert.meeting-banner .meeting-btn {
+    background-color: #1a1a1a;
+    color: #fff !important;
+}
+
 .meeting-btn {
     background-color: #1a1a1a;
     color: #fff !important;
